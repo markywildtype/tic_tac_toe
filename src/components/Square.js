@@ -12,13 +12,15 @@ class Square extends Component {
 
 
   handleSquareClick = () => {
-    console.log(this.props.playerTurn);
+    if(this.state.noughtOrCross === null){
+      this.props.switchPlayer();
     if(this.props.playerTurn === true){
       this.setState({noughtOrCross: 'X'})
     } else {
       this.setState({noughtOrCross: 'O'})
     }
-  }
+  } else return;
+}
 
   render(){
     return(

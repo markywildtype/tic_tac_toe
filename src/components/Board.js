@@ -17,23 +17,24 @@ class Board extends Component {
 
   render(){
     return (
-      <div onClick={this.switchPlayer}>
+      // <div onClick={this.switchPlayer}>
+      <div>
         <table>
           <tbody>
             <tr>
-              <td id="a1"><Square playerTurn={this.state.playerTurn}/></td>
-              <td id="a2"><Square playerTurn={this.state.playerTurn}/></td>
-              <td id="a3"><Square playerTurn={this.state.playerTurn}/></td>
+              <td id="a1"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
+              <td id="a2"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
+              <td id="a3"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
             </tr>
             <tr>
-              <td id="b1"><Square playerTurn={this.state.playerTurn}/></td>
-              <td id="b2"><Square playerTurn={this.state.playerTurn}/></td>
-              <td id="b3"><Square playerTurn={this.state.playerTurn}/></td>
+              <td id="b1"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
+              <td id="b2"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
+              <td id="b3"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
             </tr>
             <tr>
-              <td id="c1"><Square playerTurn={this.state.playerTurn}/></td>
-              <td id="c2"><Square playerTurn={this.state.playerTurn}/></td>
-              <td id="c3"><Square playerTurn={this.state.playerTurn}/></td>
+              <td id="c1"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
+              <td id="c2"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
+              <td id="c3"><Square playerTurn={this.state.playerTurn} switchPlayer={this.switchPlayer}/></td>
             </tr>
           </tbody>
         </table>
