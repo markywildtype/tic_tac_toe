@@ -11,3 +11,11 @@ table td {
   height: 150px;
   width: 150px;
 }
+
+h1 {
+  font-family: "Permanent Marker";
+  font-size: 60pt;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
