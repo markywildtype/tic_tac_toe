@@ -1,11 +1,30 @@
-import React from 'react';
-import Board from '../components/Board'
+import React, {Component} from 'react';
+import Board from '../components/Board';
+import Button from '../components/Button';
 
-const BoardContainer = (props) => {
+class BoardContainer extends Component {
 
+constructor(props){
+  super(props);
+  this.state = {
+  }
+  this.handleRefreshButton = this.handleRefreshButton.bind(this)
+}
+
+handleRefreshButton(){
+  console.log('REFRESH!');
+  this.setState({})
+}
+
+
+render(){
   return (
-    <Board />
+    <div>
+      <Board />
+      <Button refreshGame={this.handleRefreshButton}/>
+    </div>
   )
+}
 
 }
 

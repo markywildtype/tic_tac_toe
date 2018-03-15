@@ -17,7 +17,6 @@ class Board extends Component {
 
   render(){
     return (
-      // <div onClick={this.switchPlayer}>
       <div>
         <table>
           <tbody>
